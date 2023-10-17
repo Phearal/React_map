@@ -1,10 +1,11 @@
 import React from 'react'
 
 const Item = () => {
+
   return (
     <li className="listItem">
-        <h5>Item title</h5>
-        <p>Item content</p>
+        <h5>{item.title}</h5>
+        <p>{item.content}</p>
     </li>
   )
 }
