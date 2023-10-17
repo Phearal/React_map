@@ -1,11 +1,10 @@
 import React from 'react'
 
-const Item = () => {
+function Item ({item, key}) {
 
   return (
     <li className="listItem">
-        <h5>{item.title}</h5>
-        <p>{item.content}</p>
+        <h5>{item}</h5>
     </li>
   )
 }

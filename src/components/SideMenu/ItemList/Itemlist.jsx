@@ -1,27 +1,30 @@
 import React from 'react'
+import Item from './Item';
+import "./itemList.css"
 
-const items = [];
+function ItemList() {
+  const items = [];
 
-function createItems() {
-    for(let i = 0 ; i > 100 ; i++) {
-        let item = {
-            id: i,
-            title: "item title",
-            content: "item content"
-        }
-        items.push(item);
-    }
-}
-console.log(items);
+  for (let i = 1; i <= 50; i++) {
+    items.push({
+      key: i,
+      title: `Item ${i}`
+    });
+  }
 
-const Itemlist = () => {
+
+  const listItems = items.map(item => (
+    <li key={item.key} className="listItem">
+      <h5>{item.key} : {item.title}</h5>
+    </li>
+  ));
+
+  //const list = items.map((item, index) => <h2 key={index}>{index} {item}</h2>)
   return (
     <ul>
-        {
-
-        }
+      {listItems}
     </ul>
   )
 }
 
-export default Itemlist
+export default ItemList
