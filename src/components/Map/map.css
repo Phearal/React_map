@@ -1,0 +1,7 @@
+.mapMain {
+    display: flex;
+}
+.test {
+    height: 100vh !important;
+    width: 100% !important;
+}

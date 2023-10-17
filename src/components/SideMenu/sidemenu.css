@@ -1,0 +1,18 @@
+.sidemenu {
+    height: 100vh;
+    width: 500px;
+    top: 0;
+    right: 0;
+    background-color: #999;
+    overflow-y: scroll;
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+a {
+    text-decoration: none;
+}
