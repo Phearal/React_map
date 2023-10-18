@@ -1,29 +1,36 @@
-import React from 'react'
-import Item from './Item';
+import React, { useEffect, useState } from 'react'
 import "./itemList.css"
 
 function ItemList() {
-  const items = [];
+  const [items, setItems] = useState([]);
 
-  for (let i = 1; i <= 51; i++) {
-    items.push({
-      key: i,
-      title: `Item ${i}`
-    });
-  }
+  // useEffect permet de ne déclencher qu'une seule fois le comportement au chargement de la page
+  useEffect(() => {
+    fetch("http://localhost:3000/assets/data/items.json")
+      .then((response) => response.json())
+      .then(data => setItems(data))
+  }, [])
 
-
-  const listItems = items.map(item => (
-    <li key={item.key} className="listItem">
-      <h5>{item.key} : {item.title}</h5>
-    </li>
-  ));
 
   return (
     <ul className="item-list">
-      {listItems}
+      {
+        items.map((item) => {
+          return (
+            <li className="list-item">
+              <div className="item-text-container">
+                <h3>{item.title}</h3>
+                <p>{item.adresse}</p>
+              </div>
+              <div className="sideitem-img-container">
+                <img src={`/assets/img/skateparks/${item.img}`} alt="" />
+              </div>
+            </li>
+          )
+        })}
     </ul>
   )
+
 }
 
 export default ItemList

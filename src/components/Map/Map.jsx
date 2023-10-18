@@ -23,7 +23,7 @@ function Map() {
     })
 
     return (
-        <MapContainer className='test' center={[43.309865, -0.372990]} zoom={13} scrollWheelZoom={true}>
+        <MapContainer className='test' center={[43.309865, -0.372990]} zoom={12} scrollWheelZoom={true}>
             <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -31,11 +31,13 @@ function Map() {
             {
                 items.map((item) => {
                     return (
-                        <Marker position={[item.lat, item.long]} icon={customIcon}>
+                        <Marker key={item.id} position={[item.lat, item.long]} icon={customIcon}>
                             <Popup>
                                 <h3>{item.title}</h3>
                                 <p>{item.adresse}</p>
-                                <img src="/assets/img/skateparks/{item.img}" alt="" />
+                                <div className="marker-img-container">
+                                    <img src={`/assets/img/skateparks/${item.img}`} alt="" />
+                                </div>
                             </Popup>
                         </Marker>
                     )

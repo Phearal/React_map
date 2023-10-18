@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* https://coolors.co/2a1f2d-3b2c35-5b6c5d-59c9a5-56e39f */
+
 * {
     padding: 0px;
     margin: 0px;
+    font-family: 'Poppins', sans-serif;
 }
 :root {
     --white: #fff;
     --black: #000;
-    --dark-purple: #2A1F2D;
+    --dark-purple: #2a1f2d;
+    --raisin-black: #3b2c35;
+    --feldgrau: #5b6c5d;
+    --mint: #59c9a5;
+    --aquamarine: #56e39f;
 }

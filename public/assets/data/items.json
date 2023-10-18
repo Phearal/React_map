@@ -16,5 +16,86 @@
         "category": "skatepark",
         "lat": 43.3960331042161,
         "long": -0.5737066031543805
+    },
+    {
+        "id": 3,
+        "title": "Skatepark des remparts",
+        "adresse": "Chem. de Beneharnum, 64230 Lescar",
+        "img": "skatepark_des_remparts.jpg",
+        "category": "skatepark",
+        "lat": 43.33610282380392,
+        "long": -0.4326708525135984
+    },
+    {
+        "id": 4,
+        "title": "Skatepark de Lons",
+        "adresse": "1 Mail de Coubertin, 64140 Lons",
+        "img": "skatepark_lons.jpg",
+        "category": "skatepark",
+        "lat": 43.32736225635154,
+        "long": -0.3986819010407616
+    },
+    {
+        "id": 5,
+        "title": "Skatepark de Sauvagnon",
+        "adresse": "Pl. des Écoles, 64230 Sauvagnon",
+        "img": "skatepark_sauvagnon.jpg",
+        "category": "skatepark",
+        "lat": 43.40293740344871,
+        "long": -0.38262957776027784
+    },
+    {
+        "id": 6,
+        "title": "Skate-park Bigoride",
+        "adresse": "23 Rte de Pau, 65420 Ibos",
+        "img": "skatepark_bigoride.jpg",
+        "category": "skatepark",
+        "lat": 43.24590938541675,
+        "long": -0.011047826700844511
+    },
+    {
+        "id": 7,
+        "title": "Skatepark Hagetmau",
+        "adresse": "210 Chem. de Balette, 40700 Hagetmau",
+        "img": "skatepark_hagetmau.jpg",
+        "category": "skatepark",
+        "lat": 43.70997455876771,
+        "long": -0.5954535416498283
+    },
+    {
+        "id": 8,
+        "title": "Skatepark d'Oloron-Sainte-Marie",
+        "adresse": "6B Bd François Mitterrand, 64400 Oloron-Sainte-Marie",
+        "img": "skatepark_oloron.jpg",
+        "category": "skatepark",
+        "lat": 43.200890365899326,
+        "long": -0.6211387421526651
+    },
+    {
+        "id": 9,
+        "title": "Skatepark de Geaune",
+        "adresse": "Chem. de la Piscine, 40320 Geaune",
+        "img": "skatepark_geaune.jpg",
+        "category": "skatepark",
+        "lat": 43.65764958463526,
+        "long": -0.36821555728537353
+    }, 
+    {
+        "id": 10,
+        "title": "Skatepark d'Assat",
+        "adresse": "Rte du Bois, 64510 Assat",
+        "img": "skatepark_assat.jpg",
+        "category": "skatepark",
+        "lat": 43.26126707234823,
+        "long": -0.2868773509791914
+    },
+    {
+        "id": 11,
+        "title": "Skatepark Saint-Vincent-de-Tyrosse",
+        "adresse": "11 Voie Romaine, 40230 Saint-Vincent-de-Tyrosse",
+        "img": "skatepark_saint_vincent_tyrosse.jpg",
+        "category": "skatepark",
+        "lat": 43.67793099009132,
+        "long": -1.2931088417070817
     }
 ]
