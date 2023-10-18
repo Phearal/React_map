@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "Skatepark de Pau",
+        "adresse": "Usine des Tramways, Pont Lalanne, 64000 Pau",
+        "img": "skatepark_de_pau.jpg",
+        "category": "skatepark",
+        "lat": 43.29085790181754,
+        "long": -0.3655895466319969
+    },
+    {
+        "id": 2,
+        "title": "Skate Park Artics",
+        "adresse": "Rue du Gave, 64170 Artix",
+        "img": "skatepark_artix.jpg",
+        "category": "skatepark",
+        "lat": 43.3960331042161,
+        "long": -0.5737066031543805
+    }
+]

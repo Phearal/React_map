@@ -1,7 +1,15 @@
+.item-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    margin: 20px;
+}
 .listItem {
-    width: 95%;
-    height: 150px;
-    border: 1px solid #000;
+    width: 262px;
+    height: 200px;
     background-color: #fff;
     display: flex;
     align-items: center;

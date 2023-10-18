@@ -5,7 +5,7 @@ import "./itemList.css"
 function ItemList() {
   const items = [];
 
-  for (let i = 1; i <= 50; i++) {
+  for (let i = 1; i <= 51; i++) {
     items.push({
       key: i,
       title: `Item ${i}`
@@ -19,9 +19,8 @@ function ItemList() {
     </li>
   ));
 
-  //const list = items.map((item, index) => <h2 key={index}>{index} {item}</h2>)
   return (
-    <ul>
+    <ul className="item-list">
       {listItems}
     </ul>
   )

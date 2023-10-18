@@ -1,17 +1,11 @@
 .sidemenu {
     height: 100vh;
-    width: 500px;
+    max-width: 600px;
+    min-width: 600px;
     top: 0;
     right: 0;
-    background-color: #999;
+    background-color: var(--dark-purple);
     overflow-y: scroll;
-}
-ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
 }
 a {
     text-decoration: none;
