@@ -6,8 +6,13 @@ import "./map.css"
 
 function Map() {
 
-
     const [items, setItems] = useState([]);
+
+    const customIcon = new Icon({
+        iconUrl: "/assets/img/icons/location.svg",
+        iconSize: [32, 32],
+        iconAnchor: [16, 32]
+    })
 
     // useEffect permet de ne déclencher qu'une seule fois le comportement au chargement de la page
     useEffect(() => {
@@ -15,12 +20,7 @@ function Map() {
             .then((response) => response.json())
             .then(data => setItems(data))
     }, [])
-
-    const customIcon = new Icon({
-        iconUrl: "/assets/img/icons/location.svg",
-        iconSize: [32, 32],
-        iconAnchor: [16, 32]
-    })
+    
 
     return (
         <MapContainer className='test' center={[43.309865, -0.372990]} zoom={12} scrollWheelZoom={true}>

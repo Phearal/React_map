@@ -21,13 +21,12 @@
 .sidemenu::-webkit-scrollbar-thumb:hover {
     background-color: var(--feldgrau); /* Couleur du curseur de défilement au survol */
 }
-  /* Barre de défilement horizontale (facultatif) */
-  .sidemenu::-webkit-scrollbar-track {
+.sidemenu::-webkit-scrollbar-track {
     background: var(--dark-purple); /* Couleur de la piste de défilement */
-  }
-  .sidemenu::-webkit-scrollbar-track:hover {
+}
+.sidemenu::-webkit-scrollbar-track:hover {
     background: var(--raisin-black); /* Couleur de la piste de défilement au survol */
-  }
+}
 a {
     text-decoration: none;
 }

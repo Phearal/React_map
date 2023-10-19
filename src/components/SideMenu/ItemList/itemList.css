@@ -10,7 +10,7 @@
 .list-item {
     width: 314px;
     height: 200px;
-    background-color: #fff;
+    background-color: var(--raisin-black);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,8 +21,19 @@
     width: 90%;
     padding: 5px;
 }
+.item-text-container h3 {
+    max-height: 30;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: var(--white);
+}
 .item-text-container p {
-    font-size: 10px;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: var(--aquamarine);
 }
 .sideitem-img-container {
     overflow: hidden;
