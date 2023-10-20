@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react';
 import Map from './Map/Map';
 import SideMenu from './SideMenu/SideMenu';
 
-const Main = () => {
+function Main() {
+  const [visibleItems, setVisibleItems] = useState([]);
+
   return (
     <main className="mapMain">
-        <Map />
-        <SideMenu />
+      <Map setMapVisibleItems={setVisibleItems} />
+      <SideMenu visibleItems={visibleItems} />
     </main>
   )
 }

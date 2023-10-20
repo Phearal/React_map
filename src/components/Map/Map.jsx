@@ -4,9 +4,10 @@ import { Icon } from "leaflet"
 import "leaflet/dist/leaflet.css"
 import "./map.css"
 
-function Map() {
+function Map({ setMapVisibleItems }) {
 
     const [items, setItems] = useState([]);
+    const [visibleItems, setVisibleItems] = useState([]);
 
     const customIcon = new Icon({
         iconUrl: "/assets/img/icons/location.svg",
@@ -20,10 +21,14 @@ function Map() {
                 console.log(e.latlng);
             },
             zoom() {
-                console.log(map.getBounds());
+                const mapBounds = map.getBounds();
+                const visibleItems = items.filter((item) => mapBounds.contains([item.lat, item.long]));
+                setMapVisibleItems(visibleItems);
             },
             moveend() {
-                console.log(map.getBounds());
+                const mapBounds = map.getBounds();
+                const visibleItems = items.filter((item) => mapBounds.contains([item.lat, item.long]));
+                setMapVisibleItems(visibleItems);
             }
         })
 

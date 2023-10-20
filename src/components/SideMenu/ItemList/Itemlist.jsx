@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import "./itemList.css"
 
-function ItemList() {
+function ItemList({ visibleItems }) {
   const [items, setItems] = useState([]);
 
   // useEffect permet de ne déclencher qu'une seule fois le comportement au chargement de la page
@@ -15,7 +15,7 @@ function ItemList() {
   return (
     <ul className="item-list">
       {
-        items.map((item) => {
+        visibleItems.map((item) => {
           return (
             <li key={item.id} className="list-item">
               <div className="item-text-container">

@@ -2,10 +2,10 @@ import React from 'react'
 import "./sidemenu.css"
 import Itemlist from './ItemList/Itemlist'
 
-const SideMenu = () => {
+const SideMenu = ({ visibleItems }) => {
   return (
     <div className="sidemenu">
-        <Itemlist />
+        <Itemlist visibleItems={visibleItems} />
     </div>
   )
 }
