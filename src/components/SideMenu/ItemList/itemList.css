@@ -16,6 +16,11 @@
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.list-item:hover {
+    background-color: var(--feldgrau);
 }
 .item-text-container {
     width: 90%;
