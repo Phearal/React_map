@@ -1,0 +1,9 @@
+.side-menu-header {
+    margin: 20px;
+}
+.side-menu-header h1 {
+    color: var(--white);
+}
+.side-menu-header p {
+    color: var(--aquamarine);
+}

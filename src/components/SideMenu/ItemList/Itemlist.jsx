@@ -4,13 +4,7 @@ import "./itemList.css"
 function ItemList({ visibleItems }) {
   const [items, setItems] = useState([]);
 
-  // useEffect permet de ne déclencher qu'une seule fois le comportement au chargement de la page
-  useEffect(() => {
-    fetch("http://localhost:3000/assets/data/items.json")
-      .then((response) => response.json())
-      .then(data => setItems(data))
-  }, [])
-
+  console.log(visibleItems);
 
   return (
     <ul className="item-list">

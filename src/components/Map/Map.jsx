@@ -15,20 +15,22 @@ function Map({ setMapVisibleItems }) {
         iconAnchor: [16, 32]
     })
 
+    const filterVisibleItems = (map) => {
+        const mapBounds = map.getBounds();
+        const visibleItems = items.filter((item) => mapBounds.contains([item.lat, item.long]));
+        setMapVisibleItems(visibleItems);
+      };
+
     const MapEvents = () => {
         const map = useMapEvents({
             click(e) {
                 console.log(e.latlng);
             },
             zoom() {
-                const mapBounds = map.getBounds();
-                const visibleItems = items.filter((item) => mapBounds.contains([item.lat, item.long]));
-                setMapVisibleItems(visibleItems);
+                filterVisibleItems(map);
             },
             moveend() {
-                const mapBounds = map.getBounds();
-                const visibleItems = items.filter((item) => mapBounds.contains([item.lat, item.long]));
-                setMapVisibleItems(visibleItems);
+                filterVisibleItems(map);
             }
         })
 
